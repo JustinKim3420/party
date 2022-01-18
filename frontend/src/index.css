@@ -1,0 +1,26 @@
+body {
+  font-family: "Roboto", Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.dark {
+  background-color: #E6E6E6;
+  color: #000000;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: #000000;
+  color: #E6E6E6;
+  padding: 0 1rem;
+}
+#navbar .right {
+  margin-left: auto;
+}
+#navbar .left {
+  margin-right: auto;
+}
+
+/*# sourceMappingURL=index.css.map */

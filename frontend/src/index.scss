@@ -1,0 +1,31 @@
+$font-stack:'Roboto', Helvetica, sans-serif;
+$dark-dark:#000000;
+$dark-light:#ebffff;
+$dark-secondary-light:#E6E6E6;
+$dark-secondary-dark:#313c47;
+$highlight:#12b8ff;
+
+body{
+    font-family: $font-stack;
+    margin:0;
+    padding:0;
+}
+
+.dark{
+    background-color: $dark-secondary-light;
+    color: $dark-dark;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: $dark-dark;
+    color: $dark-secondary-light;
+    padding: 0 1rem;
+    .right{
+        margin-left:auto;
+    }
+    .left{
+        margin-right: auto;
+    }
+}
