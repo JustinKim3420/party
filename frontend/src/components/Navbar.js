@@ -6,12 +6,12 @@ const Navbar = () => {
   return (
     <nav id="navbar">
       <div className="left">
-        <FontAwesomeIcon icon={faGlassCheers} />
+        <FontAwesomeIcon icon={faGlassCheers} className="nav-component nav-icon"/>
         <span className="nav-component">Browse</span>
       </div>
       <div className="right">
-        <span className="nav-component right">Log in</span>
-        <span className="nav-component right">Sign up</span>
+        <span className="nav-component">Log in</span>
+        <span className="nav-component">Sign up</span>
       </div>
     </nav>
   );

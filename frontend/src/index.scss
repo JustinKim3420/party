@@ -3,29 +3,88 @@ $dark-dark:#000000;
 $dark-light:#ebffff;
 $dark-secondary-light:#E6E6E6;
 $dark-secondary-dark:#313c47;
+$gray: #686464;
 $highlight:#12b8ff;
 
 body{
     font-family: $font-stack;
+    box-sizing: border-box;
     margin:0;
     padding:0;
+    overflow-x: hidden;
 }
 
 .dark{
-    background-color: $dark-secondary-light;
     color: $dark-dark;
+}
+
+.app{
+    display: block;
+    position: relative;
 }
 
 #navbar{
     display: flex;
     flex-direction: row;
+    position: relative;
     background-color: $dark-dark;
     color: $dark-secondary-light;
     padding: 0 1rem;
+    align-items: center;
+    box-shadow: 0 0.1rem 0.25rem  white;
+    z-index: 2;
     .right{
+        display: inline-flex;
+        align-items: center;
         margin-left:auto;
     }
     .left{
+        display: inline-flex;
+        align-items: center;
         margin-right: auto;
     }
+    .nav-component{
+        cursor: pointer;
+        font-size: 1rem;
+        line-height: 2rem;
+        display: inline-block;
+        margin: 0.5rem 0.5rem;
+        padding: 0 0.5rem;
+        border: white solid 0.1rem;
+        border-radius: 0.5rem;
+        transition: background-color 0.5s;
+    }
+    .nav-component:hover{
+        background-color: $gray;
+        transition: background-color 0.1s;
+    }
+    .nav-icon{
+        padding: 0.5rem 0.5rem;
+    }
 }
+
+.parallax{
+    position: relative;
+}
+
+#parallax-video{
+    width: 100%;
+    z-index: -10;
+}
+#parallax-text{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 4rem;
+    min-width: 25rem;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+    
